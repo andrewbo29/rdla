@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -141,12 +141,28 @@
             </div>
 
           </div>
+
+          <!-- Abstract moved here -->
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                We present a framework enabling real-time gesture synthesis synchronized with speech. We extend Rolling Diffusion models with structured progressive noise scheduling, enabling seamless long-sequence motion synthesis while preserving realism and diversity. Our method works with existing diffusion-based gesture models to enable continuous generation without post-processing requirements.
+              </p>
+              <p>
+                We introduce <strong>Rolling Diffusion Ladder Acceleration (RDLA)</strong>, which uses a ladder-based noise scheduling strategy to simultaneously denoise multiple frames, achieving approximately 4x speedup. Testing on ZEGGS and BEAT benchmarks demonstrated superior performance over baseline methods. User studies confirmed the framework generates realistic, diverse gestures closely synchronized with the audio input.
+              </p>
+            </div>
+          </div>
+          <!--/ Abstract -->
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Teaser video commented out
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -162,7 +178,7 @@
     </div>
   </div>
 </section>
-
+-->
 
 <section class="hero is-light is-small">
   <div class="hero-body">
@@ -222,9 +238,9 @@
 </section>
 
 
+<!-- Old sections commented out
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -238,9 +254,7 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 
-    <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -250,7 +264,6 @@
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -260,7 +273,6 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
@@ -274,9 +286,7 @@
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
       <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
@@ -294,14 +304,11 @@
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
 
-    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Animation</h2>
 
-        <!-- Interpolating. -->
         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
@@ -333,9 +340,7 @@
           </div>
         </div>
         <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
         <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
@@ -354,14 +359,11 @@
                     type="video/mp4">
           </video>
         </div>
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
-    <!--/ Animation. -->
 
 
-    <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
@@ -386,10 +388,10 @@
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
 
   </div>
 </section>
+-->
 
 
 <section class="section" id="BibTeX">
