@@ -42,46 +42,6 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
@@ -100,10 +60,10 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Constructor University</span>
+            <span class="author-block">Constructor University, Constructor Tech</span>
           </div>
 
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-3 publication-authors">
             <span class="author-block" style="font-weight: bold;">AAAI 2026</span>
           </div>
 
@@ -119,42 +79,31 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2503.10488"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://github.com/andrewbo29/co-speech-gestures-rolling-diffusion"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>Code</span>
                   </a>
               </span>
             </div>
 
           </div>
 
-          <!-- Abstract moved here -->
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                We present a framework enabling real-time gesture synthesis synchronized with speech. We extend Rolling Diffusion models with structured progressive noise scheduling, enabling seamless long-sequence motion synthesis while preserving realism and diversity. Our method works with existing diffusion-based gesture models to enable continuous generation without post-processing requirements.
-              </p>
-              <p>
-                We introduce <strong>Rolling Diffusion Ladder Acceleration (RDLA)</strong>, which uses a ladder-based noise scheduling strategy to simultaneously denoise multiple frames, achieving approximately 4x speedup. Testing on ZEGGS and BEAT benchmarks demonstrated superior performance over baseline methods. User studies confirmed the framework generates realistic, diverse gestures closely synchronized with the audio input.
-              </p>
+          <!-- TL;DR -->
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  <strong class="is-size-5">TL;DR:</strong>&nbsp;&nbsp;We introduce a mixed diffusion-autoregressive framework that transforms existing diffusion-based sequence generation models into real-time streaming methods, achieving a 4× speedup and superior temporal coherence without sacrificing motion quality or diversity.
+                </p>
+              </div>
             </div>
           </div>
-          <!--/ Abstract -->
+          <!--/ TL;DR -->
 
         </div>
       </div>
@@ -186,49 +135,25 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
+            <source src="./static/videos/clip_1_Happy_rolling_r.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
+            <source src="./static/videos/clip_4_Angry_rolling_r.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
+            <source src="./static/videos/clip_3_Happy_rolling_r.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
+            <source src="./static/videos/clip_5_Relaxed_rolling_r.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -237,6 +162,166 @@
   </div>
 </section>
 
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Generating co-speech gestures in real time requires both
+temporal coherence and efficient sampling. We introduce a
+novel framework for streaming gesture generation that extends Rolling Diffusion models with structured progressive
+noise scheduling, enabling seamless long-sequence motion
+synthesis while preserving realism and diversity. Our framework is universally compatible with existing diffusion-based
+gesture generation model, transforming them into streaming
+methods capable of continuous generation without requiring
+post-processing. We evaluate our framework on ZEGGS and
+BEAT, strong benchmarks for real-world applicability. Applied to state-of-the-art baselines on both datasets, it consistently outperforms them, demonstrating its effectiveness as
+a generalizable and efficient solution for real-time co-speech
+gesture synthesis. We further propose Rolling Diffusion Ladder Acceleration (RDLA), a new approach that employs a
+ladder-based noise scheduling strategy to simultaneously denoise multiple frames. This significantly improves sampling
+efficiency while maintaining motion consistency, achieving
+up to a 4× speedup with high visual fidelity and temporal coherence in our experiments. Comprehensive user studies further validate our framework’s ability to generate realistic, diverse gestures closely synchronized with the audio input.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework</h2>
+        <div class="content">
+          <img src="./static/images/visualization.png" alt="Framework visualization" style="max-width: 80%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            In our work, we adapt rolling diffusion models for co-speech
+gesture generation, introducing a novel framework that
+transforms any diffusion-based architecture into a streaming
+model. Our approach enables seamless and continuous gesture generation of arbitrary length by modifying the model
+architecture and integrating a structured noise scheduling
+mechanism, which, combined with the rolling denoising process, ensures smooth temporal transitions and prevents
+abrupt motion discontinuities. The model generates a new clean frame in each s-step and shifts
+the generation window forward to include the new frame at
+the end.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rolling Diffusion Ladder Acceleration -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Rolling Diffusion Ladder Acceleration</h2>
+        <div class="content">
+          <img src="./static/images/ladder_steps_s_1.png" alt="Rolling Diffusion Ladder Acceleration visualization" style="max-width: 80%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We introduce Rolling Diffusion Ladder Acceleration
+(RDLA), a novel approach that transforms the original noise
+schedule into a ladder with step size l, enabling
+the simultaneous denoising of l frames from the same noise level. This modification allows multiple frames to be jointly denoised in each iteration, accelerating the process.
+By implementing RDLA, we achieve a substantial reduction in inference time while maintaining high visual
+fidelity and temporal consistency. Empirical results demonstrate that RDLA accelerates gesture synthesis
+by up to 4× compared to standard rolling diffusion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quantitative Comparison -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Comparison</h2>
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="./static/images/zeggs_results.png" alt="ZEGGS results" style="max-width: 100%;">
+            </div>
+            <div class="column">
+              <img src="./static/images/beat_results.ong.png" alt="BEAT results" style="max-width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            To thoroughly examine the impact of our method, we integrate our progressive noise scheduling technique into multiple baseline models and conduct comparisons across two
+datasets: ZEGGS and BEAT (Tables 1 and 2). As the primary baselines for our
+work, we selected state-of-the-art diffusion-based models for gesture generation: Taming Diffusion, DiffuseStyleGesture (DSG), PersonaGestor and DiffSHEG. To evaluate the quality of our generated gestures, we utilize Frechet distance (FD) and  Diversity
+(Div) metrics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- User Study -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">User Study</h2>
+        <div class="content">
+          <img src="./static/images/user_study_all_big_3.png" alt="User Study results" style="max-width: 100%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            To assess the quality of our generated co-speech gestures,
+we conducted a user study using pairwise comparisons between our model and a baseline. We selected the ZEGGS
+dataset for its clear and expressive gestures, which allow for
+a precise evaluation of movement quality, stylistic consistency, and synchronization with speech. We used the DSG
+model as a baseline for comparison.
+          </p>
+          <p>
+             Our rolling modification of DSG significantly outperforms the original DSG, aligning well with the quantitative
+evaluation results (Left chart). To compare
+RDLA with our original method, we conducted a user study
+between DSG rolling and RDLA with l = 2. The distribution of the RDLA user study results is shown
+Right chart. The RDLA approach is only slightly inferior to our
+original method, which is consistent with the quantitative
+findings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Acceleration Findings -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Acceleration Findings</h2>
+        <div class="content">
+          <img src="./static/images/acceleration_findings.png" alt="Acceleration Findings" style="max-width: 60%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            On a NVIDIA A40 (48 GB), our
+rolling DSG and RDLA variants greatly reduce latency without sacrificing throughput, as summarized in Table 3.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Old sections commented out
 <section class="section">
@@ -397,11 +482,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{vu2025streaming,
+  title     = {Streaming Generation of Co-Speech Gestures via Accelerated Rolling Diffusion},
+  author    = {Vu, Evgeniia and Boiarov, Andrei and Vetrov, Dmitry},
+  booktitle = {AAAI},
+  year      = {2026}
 }</code></pre>
   </div>
 </section>
@@ -409,7 +494,7 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
+    <!-- <div class="content has-text-centered">
       <a class="icon-link"
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
@@ -417,22 +502,23 @@
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
-    </div>
+    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            Commons Attribution 4.0 License</a>. Website template credit: <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
           </p>
-          <p>
+          <!-- <p>
             This means you are free to borrow the <a
               href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
             we just ask that you link back to this page in the footer.
             Please remember to remove the analytics code included in the header of the website which
             you do not want on your website.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
