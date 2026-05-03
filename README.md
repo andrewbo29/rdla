@@ -3,16 +3,20 @@
 Official project page for "Streaming Generation of Co-Speech Gestures via Accelerated Rolling Diffusion" (AAAI 2026).
 
 **Paper:** [https://arxiv.org/pdf/2503.10488](https://arxiv.org/pdf/2503.10488)
+ 
 **Code:** [https://github.com/andrewbo29/co-speech-gestures-rolling-diffusion](https://github.com/andrewbo29/co-speech-gestures-rolling-diffusion)
 
 ## Citation
 
 ```bibtex
-@article{vu2025streaming,
-  title     = {Streaming Generation of Co-Speech Gestures via Accelerated Rolling Diffusion},
-  author    = {Vu, Evgeniia and Boiarov, Andrei and Vetrov, Dmitry},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2026}
+@inproceedings{vu2026streaming,
+  title={Streaming Generation of Co-Speech Gestures via Accelerated Rolling Diffusion},
+  author={Vu, Evgeniia and Boiarov, Andrei and Vetrov, Dmitry},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={31},
+  pages={26054--26061},
+  year={2026}
 }
 ```
 
